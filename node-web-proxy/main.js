@@ -1,11 +1,21 @@
 var cp = require('child_process');
 
+
+var  _exec = function(args, cb){
+  cp.exec("ProxyToggle.exe " + args, {cwd:__dirname + "/bin"}, function (error, stdout, stderr) {
+    if (error !== null)
+      throw ('exec error: ' + error);
+    cb();
+  })
+};
+
 var Proxy =  {
   disable : function(cb){
-    cp.exec("ProxyToggle.exe", cb)
+    _exec("", cb);
   },
-  enable : function(proxyString){
-    cp.exec("ProxyToggle.exe " + proxyString, cb)
+
+  enable : function(proxyString, cb){
+   _exec(proxyString, cb);
   },
 
 };
