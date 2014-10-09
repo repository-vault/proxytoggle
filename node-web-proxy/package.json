@@ -1,0 +1,22 @@
+{
+  "name": "node-web-proxy",
+  "version": "0.0.0",
+  "description": "System wide proxy management tool",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:131/proxytoggle.git"
+  },
+  "keywords": [
+    "node-webkit",
+    "proxy"
+  ],
+  "author": "Francois Leurent <131.php@cloudyks.org>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/131/proxytoggle/issues"
+  }
+}
